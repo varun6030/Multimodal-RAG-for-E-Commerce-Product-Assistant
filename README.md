@@ -1,2 +1,19 @@
-# Multimodal-RAG-for-E-Commerce-Product-Assistant
-What you'll build: You'll create an Al shopping assistant that understands both images and text. our system first uses a image-to-text model to describe the image. Then it uses that textual description to query a vector database. A user uploads a photo of any product - say, a pair of sneakers or a laptop - and asks natural-language questions
+# Multimodal RAG for E-Commerce Product Assistant
+
+A fully local, free, multimodal AI application that:
+- Understands product images
+- Retrieves similar products using vector search
+- Answers user questions using a local LLM (Ollama)
+
+## Tech Stack
+- Python
+- Streamlit
+- BLIP (image captioning)
+- Sentence-Transformers
+- FAISS
+- Ollama (Mistral)
+
+## Run Locally
+```bash
+pip install -r requirements.txt
+streamlit run app/main.py
